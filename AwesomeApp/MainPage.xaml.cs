@@ -77,7 +77,7 @@ namespace AwesomeApp
                 var dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "registrations.db");
                 using  (var db = new DatabaseContext(dbPath))
                 {
-                    db.Add(new RegDb () { RegId = 9, Registration = PlateEntry.Text.ToUpper(), StartTime = DateTime.Now });
+                    db.Add(new RegDb () { RegId = 10, Registration = PlateEntry.Text.ToUpper(), StartTime = DateTime.Now });
                     db.SaveChanges();
 
                     
